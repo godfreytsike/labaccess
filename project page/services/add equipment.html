@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta cahrset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible"
+    content="IE=edge"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"/> 
+    <title>ADD EQUIPMENT</title>
+    <link rel="stylesheet" href="../style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <header>
+    <div class="main-nav">
+      <a class="logo">LAB MANAGER</a>
+
+      <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../users/users.html">USERS</a></li>
+          <li><a href="../inventory/equipment.html">EQUIPMENT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+      </ul>
+  </div>
+
+  </header>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body"> 
+            <form method="post" target="_blank" action="add equipment.php" >
+              <div class="form-group">
+                <label for="tagid">tag id</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tagid"
+                  name="tagid"
+                />
+              </div>
+              <div class="form-group">
+                <label for="instrumentname">instrument name</label>
+                <input
+                  type="text"
+                  placeholder="instrument name"
+                  class="form-control"
+                  id="instrumentname"
+                  name="instrumentname"
+                />
+              
+              <div class="form-group">
+                <label for="clearance"> relocation clearance</label><br>
+                <input type="radio" id="clearance" name="clearance" value="YES">
+                <label for="clearance">allow relocation</label><br>
+                <input type="radio" id="clearance" name="clearance" value="NO">
+                <label for="clearance">restrict relocation</label><br>
+              </div>
+              
+
+              <div class="form-group">
+                <label for="purchased">purchased</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="purchased"
+                  name="purchased"
+                />
+              </div>
+              <input type="submit" class="btn" />
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+  </body>
+</html>
